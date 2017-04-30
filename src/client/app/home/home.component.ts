@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { NameListService } from '../shared/name-list/name-list.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import * as _ from 'lodash';
+import * as _  from 'lodash';
+
+import { NameListService } from '../shared/name-list/name-list.service';
 
 /**
  * This class represents the lazy loaded HomeComponent.
