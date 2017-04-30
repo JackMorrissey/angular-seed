@@ -52,6 +52,13 @@ export class ProjectConfig extends SeedConfig {
           main: 'index.js',
           defaultExtension: 'js'
         }
+      }, {
+        name: '@ng-bootstrap/ng-bootstrap',
+        path: 'node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
+        packageMeta: {
+          main: 'index.js',
+          defaultExtension: 'js'
+        }
       }];
     //
     this.addPackagesBundles(additionalPackages);
@@ -62,7 +69,7 @@ export class ProjectConfig extends SeedConfig {
     // ];
 
     /* Add to or override NPM module configurations: */
-    // this.PLUGIN_CONFIGS['browser-sync'] = { ghostMode: false };
+    this.PLUGIN_CONFIGS['gulp-sass'] = { includePaths: ['node_modules/bootstrap/scss'] };
   }
 
 }

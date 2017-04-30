@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
+@import '../../../scss/theme';
 
 :host {
-  background-color: $primary-color;
+  background-color: $brand-primary;
   color: rgba(255, 255, 255, 0.87);
   display: block;
   height: 48px;
