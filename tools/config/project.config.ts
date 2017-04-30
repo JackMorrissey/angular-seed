@@ -24,7 +24,6 @@ export class ProjectConfig extends SeedConfig {
     // Add `NPM` third-party libraries to be injected/bundled.
     this.NPM_DEPENDENCIES = [
       ...this.NPM_DEPENDENCIES,
-      {src: 'bootstrap/dist/css/bootstrap.min.css', inject: true},
       // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
     ];
@@ -70,7 +69,7 @@ export class ProjectConfig extends SeedConfig {
     // ];
 
     /* Add to or override NPM module configurations: */
-    // this.PLUGIN_CONFIGS['browser-sync'] = { ghostMode: false };
+    this.PLUGIN_CONFIGS['gulp-sass'] = { includePaths: ['node_modules/bootstrap/scss'] };
   }
 
 }

@@ -16,6 +16,7 @@ import { NameListService } from '../shared/name-list/name-list.service';
 })
 export class HomeComponent implements OnInit {
 
+  currentRate: number = 8;
   newName: string = '';
   errorMessage: string;
   names: any[] = [];
